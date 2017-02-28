@@ -14,7 +14,7 @@ describe('Introductory traps', function () {
     it('should return sequence of numbers', function () {
       const sequence = traps.getSequence(3);
 
-      expect(sequence).toBe([1, 2, 3]);
+      expect(sequence).toEqual([1, 2, 3]);
     });
   });
 });
