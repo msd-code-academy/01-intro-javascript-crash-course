@@ -1,0 +1,23 @@
+{
+  "name": "intro-javascript-crash-course",
+  "version": "1.0.0",
+  "description": "Introductory JavaScript crash course",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msd-code-academy/intro-javascript-crash-course.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msd-code-academy/intro-javascript-crash-course/issues"
+  },
+  "homepage": "https://github.com/msd-code-academy/intro-javascript-crash-course#readme",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0"
+  }
+}
