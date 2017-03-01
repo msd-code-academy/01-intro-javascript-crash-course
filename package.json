@@ -4,7 +4,8 @@
   "description": "Introductory JavaScript crash course",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.test.js"
+    "test": "mocha index.test.js",
+    "hello": "echo 'Hello world! Your files:' && ls"
   },
   "repository": {
     "type": "git",
