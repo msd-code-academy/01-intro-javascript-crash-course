@@ -22,7 +22,28 @@ const getSequence = function (count) {
   return numberGetters.map(numberGetter => numberGetter());
 };
 
+const getAdults = function (people) {
+  return people
+    .filter(person => true)
+    .map(adult => adult.firstName)
+    .join(', ')
+};
+
+const fetchData = function (userId, callback) {
+  const data = {name: 'Carl', surname: 'Gustav', title: 'king'};
+
+  setTimeout(function() {
+    if (Number.isFinite(userId)) {
+      callback(data);
+    }
+
+    callback(new Error('Bad request'));
+  }, 1);
+};
+
 module.exports = {
   getName,
-  getSequence
+  getSequence,
+  getAdults,
+  fetchData
 };
