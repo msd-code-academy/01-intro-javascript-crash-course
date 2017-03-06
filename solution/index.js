@@ -23,6 +23,12 @@ const getSequence = function (count) {
     /*
       Probably the trickiest one: you need to keep variable in separate scope for each function in an array,
       otherwise all of them refer to the same variable i
+
+      Alternatively, it's possible to solve it by changing how i variable is declared:
+      "let i = 1;" instead of "var i = 1;" does the magic. How?
+      Variables declared with const & let are declared for block (for loop in this case),
+      so each iteration declares new variable i.
+      See https://developer.mozilla.org/cs/docs/Web/JavaScript/Reference/Statements/let#let-scoped_variables_in_for_loops
      */
     numberGetters.push((function(j) {
       return function () {
